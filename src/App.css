@@ -1,0 +1,14 @@
+h3{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: aquamarine;
+}
+
+img{
+    max-width: 100%;
+}
+
+.material p{
+  color: black;
+  margin: 15px 15px 15px 15px;
+}
