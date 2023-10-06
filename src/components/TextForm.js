@@ -26,7 +26,7 @@ export default function TextForm(props) {
     <>
     
          <div className="container ">
-            <h2>{props.heading}</h2>
+            <h3>{props.heading}</h3>
 
           <div className="mb-3">
           <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="5"></textarea>
@@ -36,14 +36,14 @@ export default function TextForm(props) {
 
          </div>
          
-         <div className="container my-3">
+         <div className="container my-3" >
 
          <h3>Your text Summary</h3> 
-         <p>{text.split(" ").length-1} words and {text.length} characters</p>
+         <p style={{color: props.mode==='light'?'black':'white'}}>{text.split(" ").length-1} words and {text.length} characters</p>
          <h3>Time to read</h3>
-         <p>{0.008* text.split(" ").length } Minutes read</p>
+         <p style={{color: props.mode==='light'?'black':'white'}}>{0.008* text.split(" ").length } Minutes read</p>
          <h3>Preview</h3>
-         <p>{text}</p>
+         <p style={{color: props.mode==='light'?'black':'white'}}>{text.length>0?text:"Enter something to preview it here"}</p>
             
        </div>
     
